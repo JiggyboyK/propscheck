@@ -1,5 +1,8 @@
 import React from 'react'
+import Profile from './Components/Profile';
 import img from './Components/dwayne.jpg'
+
+
 
 
 function App() {
@@ -13,17 +16,17 @@ function App() {
     );
   return (
     <div className="App">
-      <profile>
-        fullname={firstName + ' ' + lastName},
-        biography = {bioMessage},
-        profession={job},
+      <Profile
+        fullname={firstName + ' ' + lastName}
+        bio = {bioMessage}
+        profession={job}
         handleName={handleName}
-        
+        >
         <img src={img} alt="user" onClick={handleName} />
-      </profile>
+      </Profile>
 
     </div>
   )
-}
+};
 
 export default App;
